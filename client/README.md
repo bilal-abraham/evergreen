@@ -2,10 +2,10 @@
 
 ## Tools Used:
 
-[Create React App](https://github.com/facebook/create-react-app).\
-[Remix's Library](https://remix-design.github.io/RemixIcon/#/) of SVG's.\
-[Firebase's](https://firebase.google.com/) Google Analytics & Hosting.\
-[ReactRouter](https://www.npmjs.com/package/react-router-dom/v/5.2.0).
+[Create React App](https://github.com/facebook/create-react-app)\
+[Remix's Library](https://remix-design.github.io/RemixIcon/#/) of SVG's\
+[Firebase's](https://firebase.google.com/) Google Analytics & Hosting\
+[ReactRouter](https://www.npmjs.com/package/react-router-dom/v/5.2.0)
 
 ## To Run this Projects Code
 
