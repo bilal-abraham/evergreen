@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+
 
 const Footer = () => {
     return (
-        <div>
-            <h1>foooter</h1>
-        </div>
+        <Fragment>
+            <h1>Footer</h1>
+        </Fragment>
     )
 }
 

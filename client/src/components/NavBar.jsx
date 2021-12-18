@@ -1,11 +1,14 @@
 import React, {Fragment} from 'react'
 
-const NavBar = () => {
+import './css/NavBar.css'
+
+
+const NavBar = (props) => {
     return (
         <Fragment>
             <nav className='navbar'>
-                <ul className='navbar-nav'>
-                </ul>
+                <header className='navbar-title'>The Evergreen Project</header>
+                <ul className='navbar-nav'> { props.children } </ul>
             </nav>
         </Fragment>
     )

@@ -1,6 +1,6 @@
 const fs = require("fs");
-const fnames = fs.readFileSync("doc/fnames.txt", { encoding: "utf-8" }).split("\n")
-const lnames = fs.readFileSync("doc/lnames.txt", { encoding: "utf-8" }).split("\n")
+const fnames = fs.readFileSync("../doc/fnames.txt", { encoding: "utf-8" }).split("\n")
+const lnames = fs.readFileSync("../doc/lnames.txt", { encoding: "utf-8" }).split("\n")
 
 let unnamedSum = 0;
 

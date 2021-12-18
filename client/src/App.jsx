@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react'
-import Home from './pages/Home.jsx'
-
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
+
+import Home from './pages/Home.jsx'
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyDW40w2BJ_IgUI3Z5TuBWD5hhNA1N1hlr8",
@@ -18,15 +19,12 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 // getAnalytics(firebaseConfig);
 
-
 const App = () => {
     return (
         <Fragment>
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/">
-                        <Home />
-                    </Route>
+                    <Route exact path="/" component={ Home } />
                 </Switch>
             </BrowserRouter>
         </Fragment>
