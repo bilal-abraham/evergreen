@@ -1,7 +1,7 @@
 .dropdown {
 	position: absolute;
 	z-index: 1;
-	top: 58px;
+	top: calc(10vh - 5px);
 	width: 300px;
 	background-color: var(--bg);
 	border: var(--border);
@@ -12,7 +12,7 @@
 }
 
 .menu {
-	width: 100%;
+	width: 100vw;
 }
 
 .menu-item {

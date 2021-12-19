@@ -1,6 +1,40 @@
-.footer {
+.footer-container {
+	display: flex;
+	color: var(--text-color);
+	font-size: 1.5rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: 100%;
+	height: 10vh;
 }
 
-.footer-text {
+.social-icons {
+	letter-spacing: 0.7rem;
 	color: var(--text-color);
+}
+
+i,
+i:focus,
+i:visited,
+i:active {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.i:hover {
+	color: var(--accent-color);
+}
+
+@media screen and (max-width: 415px) {
+	.footer-container {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.footer-container {
+		font-size: 0.8rem;
+	}
 }

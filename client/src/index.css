@@ -3,16 +3,16 @@
 	--bg-accent: #484a4d;
 	--accent-color: #43644b;
 	--text-color: #dadce1;
-	--nav-size: 60px;
-	--border: 1px solid #474a4d;
+	--nav-size: 10vh;
+	--border: 1px solid #43644b;
 	--border-radius: 8px;
 	--speed: 500ms;
-	--footer-size: calc(80%-60px);
 }
 
 body {
 	margin: 0;
-	width: 100%;
+	width: 100vw;
+	height: 100vh;
 	background-color: var(--bg-accent);
 	font-family: 'Courier New', serif;
 	font-weight: normal;
