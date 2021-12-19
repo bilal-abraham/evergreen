@@ -1,5 +1,6 @@
 .dropdown {
 	position: absolute;
+	z-index: 1;
 	top: 58px;
 	width: 300px;
 	background-color: var(--bg);

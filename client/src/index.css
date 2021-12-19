@@ -1,7 +1,7 @@
 :root {
 	--bg: #242526;
 	--bg-accent: #484a4d;
-	--accent-color: #29d952;
+	--accent-color: #43644b;
 	--text-color: #dadce1;
 	--nav-size: 60px;
 	--border: 1px solid #474a4d;
@@ -13,7 +13,7 @@
 body {
 	margin: 0;
 	width: 100%;
-	background-color: var(--accent-color);
+	background-color: var(--bg-accent);
 	font-family: 'Courier New', serif;
 	font-weight: normal;
 	-webkit-font-smoothing: antialiased;
