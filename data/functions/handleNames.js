@@ -1,18 +1,23 @@
 const fs = require("fs");
+const readline = require("readline");
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 const fnames = fs.readFileSync("../doc/fnames.txt", { encoding: "utf-8" }).split("\n")
 const lnames = fs.readFileSync("../doc/lnames.txt", { encoding: "utf-8" }).split("\n")
 
-let unnamedSum = 0;
 
-for (const f of fnames) {
-    if (f == "John") {
-        unnamedSum++
-        console.log(f)
-    }  
+
+let person = {
+    fname: "",
 }
 
-console.log(`Amount of Unnames: ${unnamedSum}`)
+console.log("Who are you looking for?")
+rl.question("First Name: ", (fnameinput) => {
 
-// for (const l of lnames) {
-//     console.log(l)
-// }
+});
+
+rl.on("close", function() {
+    process.exit(0);
+});

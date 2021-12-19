@@ -1,0 +1,24 @@
+.home-hero-main {
+	padding: 1em;
+	background: var(--bg);
+	margin-bottom: 1em;
+	padding-bottom: 3.5em;
+	text-align: center;
+	clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+	height: 80%;
+}
+
+.home-hero-img {
+	height: 15%;
+	width: 15%;
+}
+
+.home-hero-header {
+	font-size: 2rem;
+	color: var(--text-color);
+}
+
+.home-hero-subtext {
+	color: var(--text-color);
+	font-size: 1.05rem;
+}

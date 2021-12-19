@@ -1,17 +1,23 @@
 :root {
 	--bg: #242526;
 	--bg-accent: #484a4d;
+	--accent-color: #29d952;
 	--text-color: #dadce1;
 	--nav-size: 60px;
 	--border: 1px solid #474a4d;
 	--border-radius: 8px;
 	--speed: 500ms;
+	--footer-size: calc(80%-60px);
 }
 
 body {
 	margin: 0;
+	width: 100%;
+	background-color: var(--accent-color);
 	font-family: 'Courier New', serif;
 	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ul {
