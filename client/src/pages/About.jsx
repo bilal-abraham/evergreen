@@ -6,9 +6,10 @@ import { ReactComponent as ArrowDownIcon } from '../components/svg/arrow-down.sv
 import Navbar from '../components/NavBar.jsx';
 import NavItem from '../components/NavItem.jsx';
 import DropdownMenu from '../components/DropdownMenu.jsx';
-import Hero from '../components/layout/HomeHero.jsx';
+import Hero from '../components/layout/AboutHero.jsx';
+import Footer from '../components/Footer.jsx';
 
-const Home = () => {
+const About = () => {
 	return (
 		<Fragment>
 			<Navbar>
@@ -19,8 +20,9 @@ const Home = () => {
 				</NavItem>
 			</Navbar>
 			<Hero />
+			<Footer />
 		</Fragment>
 	);
 };
 
-export default Home;
+export default About;
