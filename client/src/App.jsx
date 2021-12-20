@@ -4,6 +4,7 @@ import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 
 import Home from './pages/Home.jsx'
+import Error404 from './pages/Error404.jsx'
 
 
 const firebaseConfig = {
@@ -25,6 +26,7 @@ const App = () => {
             <BrowserRouter>
                 <Switch>
                     <Route exact path="/" component={ Home } />
+                    <Route path="/" component={ Error404 } />
                 </Switch>
             </BrowserRouter>
         </Fragment>

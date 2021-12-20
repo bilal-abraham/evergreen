@@ -1,10 +1,11 @@
 :root {
 	--bg: #242526;
 	--bg-accent: #484a4d;
-	--accent-color: #43644b;
+	--color: #121149;
+	--accent-color: #273b7a;
 	--text-color: #dadce1;
 	--nav-size: 10vh;
-	--border: 1px solid #43644b;
+	--border: 2.5px solid #273b7a;
 	--border-radius: 8px;
 	--speed: 500ms;
 }

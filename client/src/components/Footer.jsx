@@ -6,7 +6,7 @@ import './css/Footer.css'
 const Footer = () => {
     return (
         <Fragment>
-            <section className="footer-container">
+            <section className="footer">
                 <p className="copyright">The Evergreen Project © 2021</p>
                 <div className="social-icons">
                     <a href="https://github.com/bilal-abraham/evergreen">
