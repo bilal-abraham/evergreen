@@ -52,20 +52,27 @@ const AboutHero = () => {
 						<div className='about-team-items'>
 							<div className='about-card-wrapper'>
 								<AboutCard
-									name='Lillie Samuels'
-									role='Founder'
+									name='Bilal Abraham'
+									role='Web-Developer'
+									hasGitHub={true}
+									github='https://github.com/bilal-abraham'
+									hasGram={true}
+									gram='https://www.instagram.com/bilalabraham_/'
+									linkedin='https://www.linkedin.com/in/bilal-abraham-3140491b8/'
 								/>
 							</div>
 							<div className='about-card-wrapper'>
 								<AboutCard
-									name='Bilal Abraham'
-									role='Developer'
+									name='Lillie Samuels'
+									role='Genealogist'
+									linkedin='https://www.linkedin.com/in/lillie-samuels/'
 								/>
 							</div>
 							<div className='about-card-wrapper'>
 								<AboutCard
 									name='Amitra Mamdouhi'
 									role='Data Analyst'
+									linkedin='https://wwwlinkedin.com'
 								/>
 							</div>
 						</div>
