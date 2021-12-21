@@ -4,9 +4,9 @@ const lNames = fs.readFileSync('../doc/lnames.txt', { encoding: 'utf-8' }).split
 const fNames = fs.readFileSync('../doc/fnames.txt', { encoding: 'utf-8' }).split('\n');
 const stats = require('./getStats.js');
 
-
 let matchingVals = [];
 let matchingPeople = [];
+
 
 const addMatchingFields = (x) => {
     matchingPeople.push({
@@ -38,9 +38,6 @@ rl.question('Last Name: ', (lName) =>  {
         rl.close();
     });
 });
-
-
-
 
 rl.on('close', () => {
     process.exit(0);
