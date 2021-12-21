@@ -6,10 +6,10 @@ import { ReactComponent as ArrowDownIcon } from '../components/svg/arrow-down.sv
 import Navbar from '../components/NavBar';
 import NavItem from '../components/NavItem';
 import DropdownMenu from '../components/DropdownMenu';
-import Hero from '../components/layout/AboutHero';
+import Hero from '../components/layout/FindaPersonHero';
 import Footer from '../components/Footer';
 
-const About = () => {
+const FindaPerson = () => {
 	return (
 		<Fragment>
 			<Navbar>
@@ -25,4 +25,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default FindaPerson;

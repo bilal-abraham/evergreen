@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 
-import AboutCard from '../AboutCard.jsx';
+import AboutCard from '../AboutCard';
 import '../css/AboutHero.css';
 
 const AboutHero = () => {
 	return (
 		<Fragment>
-			<section className='about-hero-section'>
+			<section className='about-hero-main'>
 				<div className='about-container'>
 					<div className='about-row'>
 						<div className='about-section-title'>

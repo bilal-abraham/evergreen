@@ -1,6 +1,6 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-.about-hero-section {
+.about-hero-main {
 	background: linear-gradient(
 		307deg,
 		var(--bg-accent),
@@ -14,7 +14,7 @@
 	animation: AboutBackground 12s ease infinite;
 }
 
-.about-hero-section {
+.about-hero-main {
 	box-sizing: border-box;
 	background-color: var(--bg--accent);
 	min-height: 75vh;

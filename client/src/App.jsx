@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
-// import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from 'firebase/analytics';
 
-import Home from './pages/Home.jsx';
-import About from './pages/About.jsx';
-import Error404 from './pages/Error404.jsx';
+import Home from './pages/Home';
+import About from './pages/About';
+import Error404 from './pages/Error404';
+import FindaPerson from './pages/FindaPerson';
 
 const firebaseConfig = {
 	apiKey: 'AIzaSyDW40w2BJ_IgUI3Z5TuBWD5hhNA1N1hlr8',
@@ -27,6 +28,7 @@ const App = () => {
 				<Switch>
 					<Route exact path='/' component={Home} />
 					<Route exact path='/about' component={About} />
+					<Route exact path='/findaperson' component={FindaPerson} />
 					<Route path='/' component={Error404} />
 				</Switch>
 			</BrowserRouter>
