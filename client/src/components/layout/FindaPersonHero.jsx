@@ -2,8 +2,8 @@ import React, { Fragment, useState } from 'react';
 import lnames from '../data/lnames';
 import fnames from '../data/fnames';
 import * as stats from '../functions/getStats';
-
 import '../css/FindaPersonHero.css';
+import PersonCard from '../PersonCard';
 
 const FindaPersonHero = () => {
 	let lNames = lnames.split('\n');
@@ -33,7 +33,7 @@ const FindaPersonHero = () => {
 		matchingPeople = [];
 		for (let i = 0; i < lNames.length; i++) {
 			if (
-				lNames[i].toLowerCase() === lastName.toLowerCase() ||
+				lNames[i].toLowerCase() === lastName.toLowerCase() &&
 				fNames[i].toLowerCase() === firstName.toLowerCase()
 			)
 				matchingVals.push(i);
@@ -51,6 +51,7 @@ const FindaPersonHero = () => {
 					<i className='fa fa-search' />
 					&nbsp;Find A Person:
 				</header>
+
 				<div className='search'>
 					<div className='search-input-wrapper'>
 						<input
@@ -110,28 +111,17 @@ const FindaPersonHero = () => {
 									occupation,
 									causeofDeath,
 								}) => (
-									<article className='find-hero-card'>
-										<div className=''>
-											First Name: {firstName}
-										</div>
-										<div className=''>
-											Last Name: {lastName}
-										</div>
-										<div className=''>Gender: {gender}</div>
-										<div className=''>Race: {race}</div>
-										<div className=''>
-											Day of Death: {dayOfDeath}
-										</div>
-										<div className=''>
-											Marital Status: {maritalStatus}
-										</div>
-										<div className=''>
-											Occupation: {occupation}
-										</div>
-										<div className=''>
-											Cause of Death: {causeofDeath}
-										</div>
-									</article>
+									<PersonCard
+										key={firstName + lastName}
+										f={firstName}
+										l={lastName}
+										g={gender}
+										r={race}
+										d={dayOfDeath}
+										m={maritalStatus}
+										o={occupation}
+										c={causeofDeath}
+									/>
 								)
 							)}
 						</div>
