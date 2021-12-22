@@ -27,9 +27,8 @@ const FindaPersonHero = () => {
 	};
 
 	const handleSubmit = () => {
-		console.log('submitted');
 		for (let i = 0; i < lNames.length; i++) {
-			if (lNames[i] == lastName && fNames[i] == firstName)
+			if (lNames[i] === lastName && fNames[i] === firstName)
 				matchingVals.push(i);
 		}
 		for (const val of matchingVals) {
@@ -61,7 +60,7 @@ const FindaPersonHero = () => {
 						<div className='find-hero-x'>
 							<i
 								className='fa fa-times'
-								onClick={handleXLastClick}
+								onClick={() => setLastName('')}
 							/>
 						</div>
 					</div>
@@ -77,7 +76,7 @@ const FindaPersonHero = () => {
 						<div className='find-hero-x'>
 							<i
 								className='fa fa-times'
-								onClick={handleXFirstClick}
+								onClick={() => setFirstName('')}
 							/>
 						</div>
 					</div>
