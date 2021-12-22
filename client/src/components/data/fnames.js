@@ -1,5 +1,4 @@
-const fnames = `
-Aline
+const fnames = `Aline
 B.
 Bettie
 Dick

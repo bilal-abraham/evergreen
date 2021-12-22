@@ -1,5 +1,4 @@
-const causeofdeath = `Adams
-Lung Issues
+const causeofdeath = `Lung Issues
 Prostatitis
 Lung Issues
 Nephritis

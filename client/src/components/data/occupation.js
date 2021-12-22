@@ -1,5 +1,4 @@
-const occupation = `
-None
+const occupation = `None
 Gardener
 None
 Factory Worker

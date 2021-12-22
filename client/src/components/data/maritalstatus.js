@@ -1,5 +1,4 @@
-const maritalstatus = `
-Single
+const maritalstatus = `Single
 Widowed
 Single
 Married

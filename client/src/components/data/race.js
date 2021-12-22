@@ -1,5 +1,4 @@
-const race = `
-Negro
+const race = `Negro
 Negro
 Negro
 Negro

@@ -1,5 +1,4 @@
-const gender = `
-Female
+const gender = `Female
 Male
 Female
 Male
