@@ -3,8 +3,11 @@
 	--bg-accent: #484a4d;
 	--color: #121149;
 	--accent-color: #273b7a;
+	--alt: #eaa22f;
+	--alt-accent: #ffc61b;
 	--text-color: #dadce1;
 	--nav-size: 10vh;
+	--footer-size: 10vh;
 	--border: 2.5px solid #273b7a;
 	--border-radius: 8px;
 	--speed: 500ms;

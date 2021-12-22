@@ -2,8 +2,8 @@ import React, { Fragment, useState } from 'react';
 import lnames from '../data/lnames';
 import fnames from '../data/fnames';
 import * as stats from '../functions/getStats';
-import '../css/FindaPersonHero.css';
 import PersonCard from '../PersonCard';
+import '../css/FindaPersonHero.css';
 
 const FindaPersonHero = () => {
 	let lNames = lnames.split('\n');
@@ -14,6 +14,10 @@ const FindaPersonHero = () => {
 	const [firstName, setFirstName] = useState('');
 	const [results, setResults] = useState([{}]);
 	const [hasResults, setHasResults] = useState(false);
+	const [individualSearch, setIndividualSearch] = useState(false);
+	const [individualStrClass, setIndividualStrClass] = useState(
+		'find-hero-cards-wrapper'
+	);
 
 	const addMatchingFields = (x) => {
 		matchingPeople.push({
@@ -29,20 +33,30 @@ const FindaPersonHero = () => {
 		setHasResults(true);
 	};
 	const handleSubmit = () => {
+		setIndividualStrClass('find-hero-cards-wrapper');
 		matchingVals = [];
 		matchingPeople = [];
 		for (let i = 0; i < lNames.length; i++) {
-			if (
-				lNames[i].toLowerCase() === lastName.toLowerCase() &&
-				fNames[i].toLowerCase() === firstName.toLowerCase()
-			)
-				matchingVals.push(i);
+			if (individualSearch) {
+				if (
+					lNames[i].toLowerCase() === lastName.toLowerCase() &&
+					fNames[i].toLowerCase() === firstName.toLowerCase()
+				) {
+					matchingVals.push(i);
+					setIndividualStrClass('find-hero-cards-wrapper-center');
+				}
+			} else if (!individualSearch) {
+				if (
+					lNames[i].toLowerCase() === lastName.toLowerCase() ||
+					fNames[i].toLowerCase() === firstName.toLowerCase()
+				)
+					matchingVals.push(i);
+			}
 		}
 		for (const val of matchingVals) {
 			addMatchingFields(val);
 		}
 		setResults(matchingPeople);
-		console.log(matchingPeople);
 	};
 	return (
 		<Fragment>
@@ -51,7 +65,17 @@ const FindaPersonHero = () => {
 					<i className='fa fa-search' />
 					&nbsp;Find A Person:
 				</header>
-
+				<label className='find-hero-individual-wrapper'>
+					Individual Search?&nbsp;&nbsp;
+					<select
+						className='find-hero-selector'
+						value={individualSearch}
+						onChange={(e) => setIndividualSearch(e.target.value)}
+					>
+						<option value={false}>No</option>
+						<option value={true}>Yes</option>
+					</select>
+				</label>
 				<div className='search'>
 					<div className='search-input-wrapper'>
 						<input
@@ -99,28 +123,28 @@ const FindaPersonHero = () => {
 							<i className='fa fa-users' />
 							&nbsp;Results:
 						</header>
-						<div className='find-hero-cards-wrapper'>
+						<div className={individualStrClass}>
 							{results.map(
 								({
 									firstName,
 									lastName,
 									gender,
 									race,
-									dayOfDeath,
 									maritalStatus,
 									occupation,
 									causeofDeath,
+									dayOfDeath,
 								}) => (
 									<PersonCard
-										key={firstName + lastName}
+										key={dayOfDeath + causeofDeath}
 										f={firstName}
 										l={lastName}
 										g={gender}
 										r={race}
-										d={dayOfDeath}
+										c={causeofDeath}
 										m={maritalStatus}
 										o={occupation}
-										c={causeofDeath}
+										d={dayOfDeath}
 									/>
 								)
 							)}

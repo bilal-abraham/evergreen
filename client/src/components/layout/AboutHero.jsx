@@ -65,6 +65,8 @@ const AboutHero = () => {
 								<AboutCard
 									name='Lillie Samuels'
 									role='Genealogist'
+									hasGitHub={true}
+									github='https://github.com/ldonzells'
 									linkedin='https://www.linkedin.com/in/lillie-samuels/'
 								/>
 							</div>

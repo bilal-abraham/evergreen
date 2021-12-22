@@ -7,7 +7,7 @@
 	align-items: center;
 	text-decoration: none;
 	width: 100%;
-	height: 10vh;
+	height: var(--footer-size);
 	border-top: var(--border);
 	padding-top: 20px;
 }

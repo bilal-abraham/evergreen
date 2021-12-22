@@ -1,4 +1,4 @@
-.card {
+.person-card {
 	height: 350px;
 	width: 400px;
 	min-width: 250px;
@@ -13,33 +13,34 @@
 	scroll-snap-align: start;
 	clear: both;
 	position: relative;
+	color: var(--text-color);
 }
 
-.card:focus-within ~ .card,
-.card:hover ~ .card {
+.person-card:focus-within ~ .person-card,
+.person-card:hover ~ .person-card {
 	transform: translateX(130px);
 }
 
-.card:hover {
+.person-card:hover {
 	transform: translateY(-1rem);
 }
 
-.card:not(:first-child) {
+.person-card:not(:first-child) {
 	margin-left: -130px;
 }
 
-.card-header {
+.person-card-header {
 	margin-bottom: auto;
 }
 
-.card-header p {
-	font-size: 14px;
+.person-card-header p {
+	font-size: 0.85rem;
 	margin: 0 0 1rem;
-	color: #7a7a8c;
+	color: #aaaaaf;
 }
 
-.card-header h2 {
-	font-size: 20px;
+.person-card-header h2 {
+	font-size: 1.5rem;
 	margin: 0.25rem 0 auto;
 	text-decoration: none;
 	color: inherit;
@@ -48,15 +49,15 @@
 	cursor: pointer;
 }
 
-.card-header h2:hover {
-	background: linear-gradient(90deg, #00d9ff, #e52e71);
+.person-card-header h2:hover {
+	background: linear-gradient(90deg, #1ccdec, var(--alt-accent));
 	text-shadow: none;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
 }
 
-.card-author {
+.person-card-death {
 	margin: 3rem 0 0;
 	display: grid;
 	grid-template-columns: 75px 1fr;
@@ -64,42 +65,43 @@
 	position: relative;
 }
 
-.author-avatar {
+.person-death-avatar {
 	grid-area: auto;
 	align-self: start;
 	position: relative;
 	box-sizing: border-box;
 }
 
-.author-avatar img {
+.person-death-avatar img {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	/* filter: grayscale(100%); */
+	filter: grayscale(100%);
 	display: block;
 	overflow: hidden;
 	margin: 16px 10px;
 }
 
-.author-name {
+.person-death {
 	grid-area: auto;
 	box-sizing: border-box;
 }
 
-.author-name-prefix {
+.person-death-name {
 	font-style: normal;
 	font-weight: 700;
 	color: #7a7a8c;
 }
 
-.half-circle {
+.person-half-circle {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 60px;
 	height: 48px;
 	fill: none;
-	stroke: var(--accent-color);
+	stroke: var(--alt-accent);
 	stroke-width: 8;
 	stroke-linecap: round;
 	pointer-events: none;
