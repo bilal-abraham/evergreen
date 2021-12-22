@@ -34,9 +34,10 @@
 }
 
 .person-card-header p {
-	font-size: 0.85rem;
+	font-size: 1rem;
 	margin: 0 0 1rem;
-	color: #aaaaaf;
+	color: white;
+	cursor: pointer;
 }
 
 .person-card-header h2 {
@@ -49,7 +50,13 @@
 	cursor: pointer;
 }
 
-.person-card-header h2:hover {
+.person-card-header h5 {
+	cursor: pointer;
+}
+
+.person-card-header h2:hover,
+h5:hover,
+p:hover {
 	background: linear-gradient(90deg, #1ccdec, var(--alt-accent));
 	text-shadow: none;
 	-webkit-text-fill-color: transparent;
@@ -91,7 +98,7 @@
 .person-death-name {
 	font-style: normal;
 	font-weight: 700;
-	color: #7a7a8c;
+	color: var(--text-color);
 }
 
 .person-half-circle {
