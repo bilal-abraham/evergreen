@@ -7,12 +7,12 @@ Lillie Samuels completed the first edition of the Evergreen Cemetery in Beaumont
 
 This second edition is the culmination of continuous research since the first-edition. The original goal was to find up to 800 deceased but we decided to discontinue this edition at 1,081. Others are believed to be buried at the cemetery beyond our stopping point but we believe conclusions can be made with this group. Data was compiled from death certificates located on FamilySearch.org. 
 
-On this website you can search for individual names. Results will include most information provided on individual death certificates. rovides information of end of life information and a glympse of those buried in the cemetery and tells a short story of the end of their life.
+From the Home Page of this website you have access to Statistics Breakdown, Find a Person, Raw Data, Read the Book, and Donate. Satistics Breakdown gives us a view ofcan search for individual names. Statistics Breakdown contain charts that group data, Find a Person give an option to search for individuals, Raw Data allow you to view all deceased included in this project. Read the Book will give readability of the first-edition of Evergreen Cemetery, Beaumont, Texas. Donate provides a way to give to research to find more deceased buried at Evergreen Cemetery and analyzing and development of this website. Results will include information provided on individual death certificates. 
 
 ## Scope and Methodology
 Research identifying deceased buried at Evergreen Cemetery, Beaumont, Texas started in 2008 after speaking with Sandra Wilterner, Director of Evergreen Cemetery Foundation. Data was gathered from death certificates found on FamilySearch.org. 
-Most fields on death certificates are included in the raw data including last name, first name, gender, race, date of death, place of death, cause of death, residence, martial status, occupation, informant, age, birth place, date of birth, US Armed Force, War Date of Services, father, father's place of birthplace, mother, mother's birthplace, and note worthy comments.
-Cause of death data is placed in 22 main catagories including unknown and other causes.
+Most fields on death certificates are included in the raw data including last name, first name, gender, race, date of death, place of death, cause of death, residence, martial status, occupation, informant, age, birth place, date of birth, US Armed Force, War-Date of Services, father, father's place of birthplace, mother, mother's birthplace, and note worthy comments.
+Analysed fields include Cause of death data is placed in 22 main catagories including unknown and other causes.
 
 ## Results
 
