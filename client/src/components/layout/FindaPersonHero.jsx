@@ -1,18 +1,47 @@
 import React, { Fragment, useState } from 'react';
 
-import Button from '../Button';
+import lnames from '../data/lnames';
+import fnames from '../data/fnames';
+import * as stats from '../functions/getStats';
 import '../css/FindaPersonHero.css';
 
 const FindaPersonHero = () => {
+	let lNames = lnames.split('\n');
+	let fNames = fnames.split('\n');
+	let matchingVals = [];
+	let matchingPeople = [];
 	const [lastName, setLastName] = useState('');
 	const [firstName, setFirstName] = useState('');
 
-	const handleXLastClick = () => setLastName('');
-	const handleXFirstClick = () => setFirstName('');
-	const handleSubmit = () => {
-		console.log('submitted');
+	const addMatchingFields = (x) => {
+		matchingPeople.push({
+			firstName: stats.getFirstName(x),
+			lastName: stats.getLastName(x),
+			gender: stats.getGender(x),
+			race: stats.getRace(x),
+			dayOfDeath: stats.getDayofDeath(x),
+			maritalStatus: stats.getMaritalStatus(x),
+			occupation: stats.getOccupation(x),
+			causeofDeath: stats.getCauseofDeath(x),
+		});
 	};
 
+	const handleSubmit = () => {
+		console.log('submitted');
+		for (let i = 0; i < lNames.length; i++) {
+			if (lNames[i] == lastName && fNames[i] == firstName)
+				matchingVals.push(i);
+		}
+		for (const val of matchingVals) {
+			addMatchingFields(val);
+		}
+		for (const person of matchingPeople) {
+			console.log(person);
+		}
+	};
+
+	const handleXLastClick = () => setLastName('');
+	const handleXFirstClick = () => setFirstName('');
 	return (
 		<Fragment>
 			<section className='find-hero-main'>
