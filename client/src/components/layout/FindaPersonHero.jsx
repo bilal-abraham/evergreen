@@ -12,7 +12,7 @@ const FindaPersonHero = () => {
 	let matchingPeople = [];
 	const [lastName, setLastName] = useState('');
 	const [firstName, setFirstName] = useState('');
-	const [people, setPeople] = useState([{}]);
+	const [results, setResults] = useState([{}]);
 
 	const addMatchingFields = (x) => {
 		matchingPeople.push({
@@ -27,6 +27,8 @@ const FindaPersonHero = () => {
 		});
 	};
 	const handleSubmit = () => {
+		matchingVals = [];
+		matchingPeople = [];
 		for (let i = 0; i < lNames.length; i++) {
 			if (lNames[i] === lastName && fNames[i] === firstName)
 				matchingVals.push(i);
@@ -34,10 +36,8 @@ const FindaPersonHero = () => {
 		for (const val of matchingVals) {
 			addMatchingFields(val);
 		}
-		for (const person of matchingPeople) {
-			setPeople((oldArray) => [...oldArray, person]);
-		}
-		console.log(people);
+		setResults(matchingPeople);
+		console.log(matchingPeople);
 	};
 	return (
 		<Fragment>
@@ -86,6 +86,26 @@ const FindaPersonHero = () => {
 							Submit
 						</button>
 					</div>
+				</div>
+				<div className='find-hero-display-results'>
+					{results.map(
+						({
+							firstName,
+							lastName,
+							gender,
+							race,
+							dayOfDeath,
+							maritalStatus,
+							occupation,
+							causeofDeath,
+						}) => (
+							<p key={firstName}>
+								{firstName}, {lastName}, {gender}, {race},
+								{dayOfDeath}, {maritalStatus}, {occupation},
+								{causeofDeath}
+							</p>
+						)
+					)}
 				</div>
 			</section>
 		</Fragment>
