@@ -12,6 +12,7 @@ const FindaPersonHero = () => {
 	let matchingPeople = [];
 	const [lastName, setLastName] = useState('');
 	const [firstName, setFirstName] = useState('');
+	const [people, setPeople] = useState([{}]);
 
 	const addMatchingFields = (x) => {
 		matchingPeople.push({
@@ -34,8 +35,9 @@ const FindaPersonHero = () => {
 			addMatchingFields(val);
 		}
 		for (const person of matchingPeople) {
-			console.log(person);
+			setPeople((oldArray) => [...oldArray, person]);
 		}
+		console.log(people);
 	};
 	return (
 		<Fragment>
