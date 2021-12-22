@@ -1,8 +1,8 @@
 import React, { Fragment, useState } from 'react';
-
 import lnames from '../data/lnames';
 import fnames from '../data/fnames';
 import * as stats from '../functions/getStats';
+
 import '../css/FindaPersonHero.css';
 
 const FindaPersonHero = () => {
@@ -13,6 +13,7 @@ const FindaPersonHero = () => {
 	const [lastName, setLastName] = useState('');
 	const [firstName, setFirstName] = useState('');
 	const [results, setResults] = useState([{}]);
+	const [hasResults, setHasResults] = useState(false);
 
 	const addMatchingFields = (x) => {
 		matchingPeople.push({
@@ -25,12 +26,16 @@ const FindaPersonHero = () => {
 			occupation: stats.getOccupation(x),
 			causeofDeath: stats.getCauseofDeath(x),
 		});
+		setHasResults(true);
 	};
 	const handleSubmit = () => {
 		matchingVals = [];
 		matchingPeople = [];
 		for (let i = 0; i < lNames.length; i++) {
-			if (lNames[i] === lastName && fNames[i] === firstName)
+			if (
+				lNames[i].toLowerCase() === lastName.toLowerCase() ||
+				fNames[i].toLowerCase() === firstName.toLowerCase()
+			)
 				matchingVals.push(i);
 		}
 		for (const val of matchingVals) {
@@ -87,26 +92,51 @@ const FindaPersonHero = () => {
 						</button>
 					</div>
 				</div>
-				<div className='find-hero-display-results'>
-					{results.map(
-						({
-							firstName,
-							lastName,
-							gender,
-							race,
-							dayOfDeath,
-							maritalStatus,
-							occupation,
-							causeofDeath,
-						}) => (
-							<p key={firstName}>
-								{firstName}, {lastName}, {gender}, {race},
-								{dayOfDeath}, {maritalStatus}, {occupation},
-								{causeofDeath}
-							</p>
-						)
-					)}
-				</div>
+				{hasResults && (
+					<div className='find-hero-display-results'>
+						<header className='find-hero-results-title'>
+							<i className='fa fa-users' />
+							&nbsp;Results:
+						</header>
+						<div className='find-hero-cards-wrapper'>
+							{results.map(
+								({
+									firstName,
+									lastName,
+									gender,
+									race,
+									dayOfDeath,
+									maritalStatus,
+									occupation,
+									causeofDeath,
+								}) => (
+									<article className='find-hero-card'>
+										<div className=''>
+											First Name: {firstName}
+										</div>
+										<div className=''>
+											Last Name: {lastName}
+										</div>
+										<div className=''>Gender: {gender}</div>
+										<div className=''>Race: {race}</div>
+										<div className=''>
+											Day of Death: {dayOfDeath}
+										</div>
+										<div className=''>
+											Marital Status: {maritalStatus}
+										</div>
+										<div className=''>
+											Occupation: {occupation}
+										</div>
+										<div className=''>
+											Cause of Data: {causeofDeath}
+										</div>
+									</article>
+								)
+							)}
+						</div>
+					</div>
+				)}
 			</section>
 		</Fragment>
 	);
