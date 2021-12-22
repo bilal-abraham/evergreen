@@ -129,7 +129,7 @@ const FindaPersonHero = () => {
 											Occupation: {occupation}
 										</div>
 										<div className=''>
-											Cause of Data: {causeofDeath}
+											Cause of Death: {causeofDeath}
 										</div>
 									</article>
 								)
