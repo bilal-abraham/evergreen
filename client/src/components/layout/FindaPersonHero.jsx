@@ -25,7 +25,6 @@ const FindaPersonHero = () => {
 			causeofDeath: stats.getCauseofDeath(x),
 		});
 	};
-
 	const handleSubmit = () => {
 		for (let i = 0; i < lNames.length; i++) {
 			if (lNames[i] === lastName && fNames[i] === firstName)
@@ -38,9 +37,6 @@ const FindaPersonHero = () => {
 			console.log(person);
 		}
 	};
-
-	const handleXLastClick = () => setLastName('');
-	const handleXFirstClick = () => setFirstName('');
 	return (
 		<Fragment>
 			<section className='find-hero-main'>
