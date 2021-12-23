@@ -32,10 +32,22 @@ const FindaPersonHero = () => {
 		});
 		setHasResults(true);
 	};
+	const giveRandomAlertExample = () => {
+		let rand = Math.floor(Math.random() * 3);
+		let str;
+		if (rand === 0) str = 'Williams';
+		if (rand === 1) str = 'Johnson';
+		if (rand === 2) str = 'Taylor';
+		return alert(
+			`Those values didn't match any in our Database. \n Try typing "${str}" into the Last Name field as an example.`
+		);
+	};
 	const handleSubmit = () => {
+		setHasResults(false);
 		setIndividualStrClass('find-hero-cards-wrapper');
 		matchingVals = [];
 		matchingPeople = [];
+		let gotResults = true;
 		for (let i = 0; i < lNames.length; i++) {
 			if (individualSearch) {
 				if (
@@ -49,14 +61,18 @@ const FindaPersonHero = () => {
 				if (
 					lNames[i].toLowerCase() === lastName.toLowerCase() ||
 					fNames[i].toLowerCase() === firstName.toLowerCase()
-				)
+				) {
 					matchingVals.push(i);
+				}
 			}
 		}
 		for (const val of matchingVals) {
 			addMatchingFields(val);
 		}
 		setResults(matchingPeople);
+		if (!matchingVals.length) {
+			giveRandomAlertExample();
+		}
 	};
 	return (
 		<Fragment>

@@ -5,7 +5,7 @@ import { ReactComponent as Chart } from '../components/svg/chart.svg';
 import { ReactComponent as Eye } from '../components/svg/eye.svg';
 import { ReactComponent as Archive } from '../components/svg/archive.svg';
 import { ReactComponent as Book } from '../components/svg/book.svg';
-import { ReactComponent as Donate } from '../components/svg/donate.svg';
+// import { ReactComponent as Donate } from '../components/svg/donate.svg';
 import './css/DropdownMenu.css';
 
 const DropdownMenu = () => {
@@ -33,9 +33,9 @@ const DropdownMenu = () => {
 				<DropdownItem leftIcon={<Book />} route='/readthebook'>
 					Read the Book
 				</DropdownItem>
-				<DropdownItem leftIcon={<Donate />} route='/donate'>
+				{/* <DropdownItem leftIcon={<Donate />} route='/donate'>
 					Donate
-				</DropdownItem>
+				</DropdownItem> */}
 			</div>
 		</Fragment>
 	);

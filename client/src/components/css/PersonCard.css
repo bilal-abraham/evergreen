@@ -55,8 +55,8 @@
 }
 
 .person-card-header h2:hover,
-h5:hover,
-p:hover {
+.person-card-header h5:hover,
+.person-card-header p:hover {
 	background: linear-gradient(90deg, #1ccdec, var(--alt-accent));
 	text-shadow: none;
 	-webkit-text-fill-color: transparent;
