@@ -10,7 +10,7 @@ const RawDataHero = () => {
 				<div className='data-hero-cards-wrapper'>
 					<span className='data-hero-card-spacer'>
 						<a
-							href='https://docs.google.com/spreadsheets/d/1vrtaarKEZpYJ3GE0BR3e92VapOtAVCEKV-FfT1heoho/edit#gid=379863631'
+							href='https://docs.google.com/spreadsheets/d/1MnKqyJKDZPilh4qcBwwJTcLZ8bIeP2wdDzwDwNrsfc4/edit?usp=sharing'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
@@ -24,28 +24,28 @@ const RawDataHero = () => {
 					</span>
 					<span className='data-hero-card-spacer'>
 						<a
-							href='https://docs.google.com/spreadsheets/d/1vrtaarKEZpYJ3GE0BR3e92VapOtAVCEKV-FfT1heoho/edit#gid=379863631'
+							href='https://docs.google.com/spreadsheets/d/1JtMg-aAgiBz3kwKbkTNb2wJtSTMvlCNqa2L5gYndgfQ/edit?usp=sharing'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
 							<article className='data-hero-card'>
 								<i className='far fa-folder-open' />
 								<p className='data-hero-card-title'>
-									Public Raw Data Sheet
+									Public Polished Data Sheet
 								</p>
 							</article>
 						</a>
 					</span>
 					<span className='data-hero-card-spacer'>
 						<a
-							href='https://docs.google.com/spreadsheets/d/1vrtaarKEZpYJ3GE0BR3e92VapOtAVCEKV-FfT1heoho/edit#gid=379863631'
+							href='https://docs.google.com/spreadsheets/d/1vrtaarKEZpYJ3GE0BR3e92VapOtAVCEKV-FfT1heoho/edit?usp=sharing'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
 							<article className='data-hero-card'>
-								<i className='far fa-folder-open' />
+								<i className='fas fa-folder-open' />
 								<p className='data-hero-card-title'>
-									Public Raw Data Sheet
+									Full Data Tables
 								</p>
 							</article>
 						</a>
