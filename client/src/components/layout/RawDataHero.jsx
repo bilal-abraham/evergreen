@@ -43,7 +43,7 @@ const RawDataHero = () => {
 							rel='noopener noreferrer'
 						>
 							<article className='data-hero-card'>
-								<i className='far fa-folder-open' />
+								<i className='fas fa-folder-open' />
 								<p className='data-hero-card-title'>
 									Full Data Tables
 								</p>
