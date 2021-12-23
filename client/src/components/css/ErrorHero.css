@@ -36,9 +36,8 @@
 	position: absolute;
 	width: 2px;
 	height: 2px;
-	background: #fff;
-	right: 0;
-	animation: starTwinkle 2s infinite linear;
+	background: white;
+	animation: starTwinkle 3s infinite linear;
 }
 
 .error-hero-astronaut img {
