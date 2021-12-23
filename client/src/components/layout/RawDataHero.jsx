@@ -8,7 +8,9 @@ const RawDataHero = () => {
 				<header className='data-hero-header'>Raw Data</header>
 				<br />
 				<article className='data-hero-'>
-					<i class='far fa-folder-open' />
+					<div className=''>
+						<i className='far fa-folder-open' />
+					</div>
 				</article>
 			</section>
 		</Fragment>

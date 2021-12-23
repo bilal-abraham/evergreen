@@ -111,7 +111,7 @@ const FindaPersonHero = () => {
 						/>
 						<div className='find-hero-x'>
 							<i
-								class='fas fa-info-circle'
+								className='fas fa-info-circle'
 								onClick={() => giveRandomExample(1)}
 							/>
 							<i
@@ -131,7 +131,7 @@ const FindaPersonHero = () => {
 						/>
 						<div className='find-hero-x'>
 							<i
-								class='fas fa-info-circle'
+								className='fas fa-info-circle'
 								onClick={() => giveRandomExample(2)}
 							/>
 							<i
