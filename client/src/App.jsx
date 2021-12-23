@@ -4,8 +4,9 @@ import { initializeApp } from 'firebase/app';
 // import { getAnalytics } from 'firebase/analytics';
 import Home from './pages/Home';
 import About from './pages/About';
-import Error404 from './pages/Error404';
+import RawData from './pages/RawData';
 import FindaPerson from './pages/FindaPerson';
+import Error404 from './pages/Error404';
 
 const firebaseConfig = {
 	apiKey: 'AIzaSyDW40w2BJ_IgUI3Z5TuBWD5hhNA1N1hlr8',
@@ -28,6 +29,7 @@ const App = () => {
 					<Route exact path='/' component={Home} />
 					<Route exact path='/about' component={About} />
 					<Route exact path='/findaperson' component={FindaPerson} />
+					<Route exact path='/rawdata' component={RawData} />
 					<Route path='/' component={Error404} />
 				</Switch>
 			</BrowserRouter>

@@ -25,7 +25,7 @@ const DropdownMenu = () => {
 				<DropdownItem leftIcon={<Eye />} route='/findaperson'>
 					Find a Person
 				</DropdownItem>
-				<DropdownItem leftIcon={<Archive />} route='/data'>
+				<DropdownItem leftIcon={<Archive />} route='/rawdata'>
 					Raw Data
 				</DropdownItem>
 				<DropdownItem leftIcon={<Book />} route='/readthebook'>
