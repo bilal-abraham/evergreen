@@ -31,15 +31,25 @@ const FindaPersonHero = () => {
 		});
 		setHasResults(true);
 	};
-	const giveRandomAlertExample = () => {
+	const giveRandomExample = (e) => {
 		let rand = Math.floor(Math.random() * 3);
 		let str;
 		if (rand === 0) str = 'Williams';
 		if (rand === 1) str = 'Johnson';
 		if (rand === 2) str = 'Taylor';
-		return alert(
-			`Those values didn't match any in our Database. \n Try typing "${str}" into the Last Name field as an example.`
-		);
+		if (e === 0) {
+			return alert(
+				`\nThose values didn't match any in our Database. \n\nTry typing "${str}" into the Last Name field as an example & clicking "Search".`
+			);
+		} else if (e === 1) {
+			return alert(
+				`\nHaving trouble searching for a deceased member of the Cemetery? \n\nTry typing "${str}" into the Last Name field & clicking "Search".`
+			);
+		} else if (e === 2) {
+			return alert(
+				`\nHaving trouble searching for a deceased member of the Cemetery? \n\nTry typing "John" into the First Name field & clicking "Search".`
+			);
+		}
 	};
 	const handleSubmit = () => {
 		setHasResults(false);
@@ -69,7 +79,7 @@ const FindaPersonHero = () => {
 		}
 		setResults(matchingPeople);
 		if (!matchingVals.length) {
-			giveRandomAlertExample();
+			giveRandomExample(0);
 		}
 	};
 	return (
@@ -101,6 +111,10 @@ const FindaPersonHero = () => {
 						/>
 						<div className='find-hero-x'>
 							<i
+								class='fas fa-info-circle'
+								onClick={() => giveRandomExample(1)}
+							/>
+							<i
 								className='fa fa-times'
 								onClick={() => setLastName('')}
 							/>
@@ -117,6 +131,10 @@ const FindaPersonHero = () => {
 						/>
 						<div className='find-hero-x'>
 							<i
+								class='fas fa-info-circle'
+								onClick={() => giveRandomExample(2)}
+							/>
+							<i
 								className='fa fa-times'
 								onClick={() => setFirstName('')}
 							/>
@@ -127,7 +145,7 @@ const FindaPersonHero = () => {
 							className='find-hero-submit-btn'
 							onClick={handleSubmit}
 						>
-							Submit
+							Search
 						</button>
 					</div>
 				</div>

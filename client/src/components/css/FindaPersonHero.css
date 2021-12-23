@@ -77,18 +77,29 @@
 }
 
 .find-hero-submit-btn:hover {
-	background-color: white;
-	color: #242424;
-	transition: all 0.3s ease-out;
-}
-
-.find-hero-x:hover {
-	cursor: pointer;
+	background-color: var(--text-color);
 	color: var(--bg-accent);
+	transition: all 0.3s ease-out;
 }
 
 .fa {
 	color: inherit;
+}
+
+.find-hero-x {
+	display: flex;
+	flex-direction: row;
+	letter-spacing: 0.3rem;
+}
+
+.fa-times:hover {
+	cursor: pointer;
+	color: var(--alt);
+}
+
+.fa-info-circle:hover {
+	cursor: pointer;
+	color: var(--alt);
 }
 
 .find-hero-display-results {
