@@ -46,7 +46,6 @@ const FindaPersonHero = () => {
 		setIndividualStrClass('find-hero-cards-wrapper');
 		matchingVals = [];
 		matchingPeople = [];
-		let gotResults = true;
 		for (let i = 0; i < lNames.length; i++) {
 			if (individualSearch) {
 				if (
