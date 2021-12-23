@@ -4,7 +4,10 @@ import '../css/RawDataHero.css';
 const RawDataHero = () => {
 	return (
 		<Fragment>
-			<h1>RawData</h1>
+			<section className='data-hero-main'>
+				<header className='data-hero-header'>Raw Data</header>
+				<br />
+			</section>
 		</Fragment>
 	);
 };

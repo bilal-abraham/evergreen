@@ -1,0 +1,12 @@
+.data-hero-main {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	justify-content: center;
+	align-items: center;
+}
+
+.data-hero-header {
+	color: var(--text-color);
+	font-size: 1.7rem;
+}
