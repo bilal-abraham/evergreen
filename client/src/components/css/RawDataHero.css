@@ -1,12 +1,45 @@
 .data-hero-main {
 	display: flex;
 	flex-direction: column;
-	padding: 15px;
-	justify-content: center;
 	align-items: center;
+	padding: 15px;
+	padding-top: 4rem;
+	height: 65vh;
 }
 
 .data-hero-header {
 	color: var(--text-color);
 	font-size: 1.7rem;
+}
+
+.data-hero-cards-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: var(--bg);
+	padding: 1.7rem;
+	justify-content: center;
+}
+
+.data-hero-card-spacer {
+	padding: 1rem;
+}
+
+.data-hero-card {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--accent-color);
+	padding: 1.5rem;
+	color: var(--text-color);
+	border-radius: 10px;
+}
+
+.data-hero-card:hover {
+	cursor: pointer;
+	filter: brightness(1.2);
+}
+
+.fa-folder-open {
+	font-size: 2.7rem;
+	padding-right: 1rem;
 }
