@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-
 import AboutCard from '../AboutCard';
 import '../css/AboutHero.css';
 

@@ -1,11 +1,9 @@
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import './css/NavItem.css';
 
 const NavItem = (props) => {
 	const [open, setOpen] = useState(false);
-
 	return (
 		<Fragment>
 			<li className='nav-item'>

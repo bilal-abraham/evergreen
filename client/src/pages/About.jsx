@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-
 import { ReactComponent as HomeIcon } from '../components/svg/temple.svg';
 import { ReactComponent as AboutIcon } from '../components/svg/about.svg';
 import { ReactComponent as ArrowDownIcon } from '../components/svg/arrow-down.svg';

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-
 import './css/Footer.css';
 
 const Footer = () => {

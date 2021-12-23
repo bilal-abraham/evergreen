@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
 // import { getAnalytics } from 'firebase/analytics';
-
 import Home from './pages/Home';
 import About from './pages/About';
 import Error404 from './pages/Error404';

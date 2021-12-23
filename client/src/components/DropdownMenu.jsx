@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-
 import { ReactComponent as Chart } from '../components/svg/chart.svg';
 import { ReactComponent as Eye } from '../components/svg/eye.svg';
 import { ReactComponent as Archive } from '../components/svg/archive.svg';
@@ -17,7 +16,6 @@ const DropdownMenu = () => {
 			</Link>
 		);
 	};
-
 	return (
 		<Fragment>
 			<div className='dropdown'>

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-
 import Logo from '../svg/cemetery.svg';
 import Button from '../Button';
 import '../css/ErrorHero.css';

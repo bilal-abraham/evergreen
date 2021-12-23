@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
+import * as stats from '../functions/getStats';
 import lnames from '../data/lnames';
 import fnames from '../data/fnames';
-import * as stats from '../functions/getStats';
 import PersonCard from '../PersonCard';
 import '../css/FindaPersonHero.css';
 
@@ -18,7 +18,6 @@ const FindaPersonHero = () => {
 	const [individualStrClass, setIndividualStrClass] = useState(
 		'find-hero-cards-wrapper'
 	);
-
 	const addMatchingFields = (x) => {
 		matchingPeople.push({
 			firstName: stats.getFirstName(x),
