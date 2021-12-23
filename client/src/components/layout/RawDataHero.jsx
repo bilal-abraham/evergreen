@@ -36,6 +36,20 @@ const RawDataHero = () => {
 							</article>
 						</a>
 					</span>
+					<span className='data-hero-card-spacer'>
+						<a
+							href='https://docs.google.com/spreadsheets/d/1JtMg-aAgiBz3kwKbkTNb2wJtSTMvlCNqa2L5gYndgfQ/edit?usp=sharing'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<article className='data-hero-card'>
+								<i className='far fa-folder-open' />
+								<p className='data-hero-card-title'>
+									Cause of Death Categories
+								</p>
+							</article>
+						</a>
+					</span>
 				</div>
 			</section>
 		</Fragment>
