@@ -36,20 +36,6 @@ const RawDataHero = () => {
 							</article>
 						</a>
 					</span>
-					<span className='data-hero-card-spacer'>
-						<a
-							href='https://docs.google.com/spreadsheets/d/1vrtaarKEZpYJ3GE0BR3e92VapOtAVCEKV-FfT1heoho/edit?usp=sharing'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<article className='data-hero-card'>
-								<i className='far fa-folder-open' />
-								<p className='data-hero-card-title'>
-									Full Data Tables
-								</p>
-							</article>
-						</a>
-					</span>
 				</div>
 			</section>
 		</Fragment>
