@@ -4,7 +4,11 @@ import '../css/DonateHero.css';
 const DonateHero = () => {
 	return (
 		<Fragment>
-			<h1>Donate</h1>
+			<section className='donate-hero-main'>
+				<header className='donate-hero-header'>
+					Donate to Help this & Projects like this Going
+				</header>
+			</section>
 		</Fragment>
 	);
 };

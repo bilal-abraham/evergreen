@@ -78,7 +78,7 @@ const FindaPersonHero = () => {
 			addMatchingFields(val);
 		}
 		setResults(matchingPeople);
-		if (matchingVals.length == 0) {
+		if (matchingVals.length === 0) {
 			giveRandomExample(0);
 		}
 		setLastName('');
