@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import ErrorHero from '../components/layout/ErrorHero';
-import Footer from '../components/Footer';
+import ErrorHero from '../contents/layout/ErrorHero';
+import Footer from '../contents/components/Footer';
 
 const Error404 = () => {
 	return (

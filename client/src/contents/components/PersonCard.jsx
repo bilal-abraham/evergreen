@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import AvatarM from './img/avatarm.png';
-import AvatarF from './img/avatarf.png';
-import './css/PersonCard.css';
+import AvatarM from '../img/avatarm.png';
+import AvatarF from '../img/avatarf.png';
+import '../css/PersonCard.css';
 
 const PersonCard = (props) => {
 	return (

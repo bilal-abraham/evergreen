@@ -23,6 +23,7 @@
 	border: 1px var(--text-color) solid;
 	color: var(--text-color);
 }
+
 .find-hero-selector select:hover {
 	color: var(--bg-accent);
 	background-color: var(--text-color);
@@ -34,7 +35,7 @@
 }
 
 .search-input-wrapper {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -42,18 +43,18 @@
 	width: 50vw;
 	padding: 0.5rem;
 	border-radius: 0.5rem;
-	color: white;
+	color: var(--text-color);
 	box-shadow: 0.4rem 0.4rem 0rem var(--color);
 }
 
 .search-bar {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	margin: 0 0.5rem 0 0.5rem;
 	width: 100%;
 	border: none;
 	outline: none;
 	background: var(--accent-color);
-	color: white;
+	color: var(--text-color);
 }
 
 ::placeholder {

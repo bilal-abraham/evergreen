@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 import * as stats from '../functions/getStats';
 import lnames from '../data/lnames';
 import fnames from '../data/fnames';
-import PersonCard from '../PersonCard';
+import PersonCard from '../components/PersonCard';
 import '../css/FindaPersonHero.css';
 
 const FindaPersonHero = () => {

@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Chart } from '../components/svg/chart.svg';
-import { ReactComponent as Eye } from '../components/svg/eye.svg';
-import { ReactComponent as Archive } from '../components/svg/archive.svg';
-import { ReactComponent as Book } from '../components/svg/book.svg';
-// import { ReactComponent as Donate } from '../components/svg/donate.svg';
-import './css/DropdownMenu.css';
+import { ReactComponent as Chart } from '../svg/chart.svg';
+import { ReactComponent as Eye } from '../svg/eye.svg';
+import { ReactComponent as Archive } from '../svg/archive.svg';
+import { ReactComponent as Book } from '../svg/book.svg';
+import { ReactComponent as Donate } from '../svg/donate.svg';
+import '../css/DropdownMenu.css';
 
 const DropdownMenu = () => {
 	const DropdownItem = (props) => {
@@ -31,9 +31,9 @@ const DropdownMenu = () => {
 				<DropdownItem leftIcon={<Book />} route='/readthebook'>
 					Read the Book
 				</DropdownItem>
-				{/* <DropdownItem leftIcon={<Donate />} route='/donate'>
+				<DropdownItem leftIcon={<Donate />} route='/donate'>
 					Donate
-				</DropdownItem> */}
+				</DropdownItem>
 			</div>
 		</Fragment>
 	);

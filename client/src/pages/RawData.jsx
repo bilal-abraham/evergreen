@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
-import { ReactComponent as HomeIcon } from '../components/svg/temple.svg';
-import { ReactComponent as AboutIcon } from '../components/svg/about.svg';
-import { ReactComponent as ArrowDownIcon } from '../components/svg/arrow-down.svg';
-import Navbar from '../components/NavBar';
-import NavItem from '../components/NavItem';
-import DropdownMenu from '../components/DropdownMenu';
-import Hero from '../components/layout/RawDataHero';
-import Footer from '../components/Footer';
+import { ReactComponent as HomeIcon } from '../contents/svg/temple.svg';
+import { ReactComponent as AboutIcon } from '../contents/svg/about.svg';
+import { ReactComponent as ArrowDownIcon } from '../contents/svg/arrow-down.svg';
+import Navbar from '../contents/components/NavBar';
+import NavItem from '../contents/components/NavItem';
+import DropdownMenu from '../contents/components/DropdownMenu';
+import Hero from '../contents/layout/RawDataHero';
+import Footer from '../contents/components/Footer';
 
 const RawData = () => {
 	return (

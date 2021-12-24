@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import AboutCard from '../AboutCard';
+import AboutCard from '../components/AboutCard';
 import '../css/AboutHero.css';
 
 const AboutHero = () => {

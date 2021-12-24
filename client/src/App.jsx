@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import RawData from './pages/RawData';
 import FindaPerson from './pages/FindaPerson';
+import ReadTheBook from './pages/ReadTheBook';
 import Error404 from './pages/Error404';
 
 const firebaseConfig = {
@@ -30,6 +31,7 @@ const App = () => {
 					<Route exact path='/about' component={About} />
 					<Route exact path='/findaperson' component={FindaPerson} />
 					<Route exact path='/rawdata' component={RawData} />
+					<Route exact path='/readthebook' component={ReadTheBook} />
 					<Route path='/' component={Error404} />
 				</Switch>
 			</BrowserRouter>

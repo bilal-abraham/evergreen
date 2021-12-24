@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Logo from '../svg/cemetery.svg';
-import Button from '../Button';
+import Button from '../components/Button';
 import '../css/HomeHero.css';
 
 const HomeHero = () => {

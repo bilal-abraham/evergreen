@@ -5,9 +5,10 @@ import { ReactComponent as ArrowDownIcon } from '../contents/svg/arrow-down.svg'
 import Navbar from '../contents/components/NavBar';
 import NavItem from '../contents/components/NavItem';
 import DropdownMenu from '../contents/components/DropdownMenu';
-import Hero from '../contents/layout/HomeHero';
+import Hero from '../contents/layout/ReadTheBookHero';
+import Footer from '../contents/components/Footer';
 
-const Home = () => {
+const ReadTheBook = () => {
 	return (
 		<Fragment>
 			<Navbar>
@@ -18,8 +19,9 @@ const Home = () => {
 				</NavItem>
 			</Navbar>
 			<Hero />
+			<Footer />
 		</Fragment>
 	);
 };
 
-export default Home;
+export default ReadTheBook;
