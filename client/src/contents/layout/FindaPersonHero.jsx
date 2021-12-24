@@ -39,15 +39,15 @@ const FindaPersonHero = () => {
 		if (rand === 2) str = 'Taylor';
 		if (e === 0) {
 			return alert(
-				`\nThose values didn't match any in our Database. \n\nTry typing "${str}" into the Last Name field as an example & clicking "Search".`
+				`\nThose values didn't match any in our Database. \n\nTry typing "${str}" into the Last Name field as an example & clicking "Search".\n\nRunning into issues? Try reloading the page & report the error on our GitHub`
 			);
 		} else if (e === 1) {
 			return alert(
-				`\nHaving trouble searching for a deceased member of the Cemetery? \n\nTry typing "${str}" into the Last Name field & clicking "Search".`
+				`\nHaving trouble searching for a deceased member of the Cemetery? \n\nTry typing "${str}" into the Last Name field & clicking "Search".\n\nRunning into issues? Try reloading the page & report the error on our GitHub`
 			);
 		} else if (e === 2) {
 			return alert(
-				`\nHaving trouble searching for a deceased member of the Cemetery? \n\nTry typing "John" into the First Name field & clicking "Search".`
+				`\nHaving trouble searching for a deceased member of the Cemetery? \n\nTry typing "John" into the First Name field & clicking "Search".\n\nRunning into issues? Try reloading the page & report the error on our GitHub`
 			);
 		}
 	};
