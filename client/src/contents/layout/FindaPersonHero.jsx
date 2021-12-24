@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import * as stats from '../functions/getStats';
-import lnames from '../data/lnames';
-import fnames from '../data/fnames';
+import lnames from '../data/lnames.js';
+import fnames from '../data/fnames.js';
 import PersonCard from '../components/PersonCard';
 import '../css/FindaPersonHero.css';
 

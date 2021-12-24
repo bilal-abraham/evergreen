@@ -1,11 +1,11 @@
-import f from '../data/fnames'
-import l from '../data/lnames'
-import g from '../data/gender'
-import r from '../data/race'
-import d from '../data/dayofdeath'
+import f from '../data/fnames.js'
+import l from '../data/lnames.js'
+import g from '../data/gender.js'
+import r from '../data/race.js'
+import d from '../data/dayofdeath.js'
 import m from '../data/maritalstatus'
-import o from '../data/occupation'
-import c from '../data/causeofdeath'
+import o from '../data/occupation.js'
+import c from '../data/causeofdeath.js'
 
 const findIndexMatch = (index, arr) => {
     for (let i = 0; i < arr.length; i++) {
