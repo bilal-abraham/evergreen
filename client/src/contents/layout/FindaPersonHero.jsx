@@ -19,6 +19,7 @@ const FindaPersonHero = () => {
 		'find-hero-cards-wrapper'
 	);
 	const addMatchingFields = (x) => {
+		setHasResults(true);
 		matchingPeople.push({
 			firstName: stats.getFirstName(x),
 			lastName: stats.getLastName(x),
@@ -29,7 +30,6 @@ const FindaPersonHero = () => {
 			occupation: stats.getOccupation(x),
 			causeofDeath: stats.getCauseofDeath(x),
 		});
-		setHasResults(true);
 	};
 	const giveRandomExample = (e) => {
 		let rand = Math.floor(Math.random() * 3);
@@ -78,9 +78,11 @@ const FindaPersonHero = () => {
 			addMatchingFields(val);
 		}
 		setResults(matchingPeople);
-		if (!matchingVals.length) {
+		if (matchingVals.length == 0) {
 			giveRandomExample(0);
 		}
+		setLastName('');
+		setFirstName('');
 	};
 	return (
 		<Fragment>
