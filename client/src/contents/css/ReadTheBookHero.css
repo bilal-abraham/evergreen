@@ -1,0 +1,50 @@
+.book-hero-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+	padding-top: 4rem;
+	height: 65vh;
+}
+
+.book-hero-header {
+	color: var(--text-color);
+	font-size: 1.7rem;
+}
+
+.book-hero-spin-wrapper {
+	padding-top: 5rem;
+}
+
+.fa-cog {
+	color: var(--text-color);
+	font-size: 15vw;
+}
+
+@media only screen and (max-width: 900px) {
+	.fa-cog {
+		color: var(--text-color);
+		font-size: 20vw;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.fa-cog {
+		color: var(--text-color);
+		font-size: 25vw;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.fa-cog {
+		color: var(--text-color);
+		font-size: 30vw;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.fa-cog {
+		color: var(--text-color);
+		font-size: 35vw;
+	}
+}

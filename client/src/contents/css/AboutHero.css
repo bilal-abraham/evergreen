@@ -75,7 +75,7 @@
 	}
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
 	.about-card-wrapper {
 		padding-bottom: 7vh;
 	}
