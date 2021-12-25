@@ -8,6 +8,7 @@ const DonateHero = () => {
 				<header className='donate-hero-header'>
 					Donate to Help this & Projects like this Going
 				</header>
+				<span className='donate-hero-span' />
 			</section>
 		</Fragment>
 	);
