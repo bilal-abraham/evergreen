@@ -12,7 +12,7 @@ From the Home Page of this website you have access to Statistics Breakdown, Find
 ## Scope and Methodology
 Research identifying deceased buried at Evergreen Cemetery, Beaumont, Texas started in 2008 after speaking with Sandra Wilterner, Director of Evergreen Cemetery Foundation. Data was gathered from death certificates found on FamilySearch.org. 
 Most fields on death certificates are included in the raw data inclusive of last name, first name, gender, race, date of death, place of death, cause of death, residence, martial status, occupation, informant, age, birth place, date of birth, US Armed Force, War-Date of Services, father, father's place of birthplace, mother, mother's birthplace, and note worthy comments.
-Analyzed fields include . . . Cause of death data is placed in 23 main catagories including unknown and other causes. Care was taken in assigning cause of death catagories but sometimes there was limited information on the death certificate. Results will include information provided on individual death certificates.
+Analyzed fields include . . . Cause of death data is placed in ... main catagories including unknown and other causes. Care was taken in assigning cause of death catagories but sometimes there was limited information on the death certificate. Results of searching using Find A Person tool includes information provided on individual death certificates. 
 
 ## Results
 
