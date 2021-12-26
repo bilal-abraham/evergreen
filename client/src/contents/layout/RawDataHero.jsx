@@ -5,7 +5,7 @@ const RawDataHero = () => {
 	return (
 		<Fragment>
 			<section className='data-hero-main'>
-				<header className='data-hero-header'>Our Sheets:</header>
+				<header className='data-hero-header'>Our Data Sheets:</header>
 				<br />
 				<div className='data-hero-cards-wrapper'>
 					<span className='data-hero-card-spacer'>

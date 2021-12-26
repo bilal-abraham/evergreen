@@ -10,6 +10,7 @@
 .data-hero-header {
 	color: var(--text-color);
 	font-size: 1.7rem;
+	padding-bottom: 1.3rem;
 }
 
 .data-hero-cards-wrapper {
