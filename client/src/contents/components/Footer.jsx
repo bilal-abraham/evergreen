@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<Fragment>
 			<section className='footer'>
-				<p className='copyright'>The Evergreen Project © 2009</p>
+				<p className='copyright'>The Evergreen Project © 2023</p>
 				<div className='social-icons'>
 					<a href='https://github.com/bilal-abraham/evergreen'>
 						<i className='fab fa-github i' />
