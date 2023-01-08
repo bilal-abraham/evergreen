@@ -91,7 +91,7 @@ const FindaPersonHero = () => {
 					<i className='fa fa-search' />
 					&nbsp;Find A Person:
 				</header>
-				<label className='find-hero-individual-wrapper'>
+				{/* <label className='find-hero-individual-wrapper'>
 					Individual Search?&nbsp;&nbsp;
 					<select
 						className='find-hero-selector'
@@ -101,7 +101,7 @@ const FindaPersonHero = () => {
 						<option value={false}>No</option>
 						<option value={true}>Yes</option>
 					</select>
-				</label>
+				</label> */}
 				<div className='search'>
 					<div className='search-input-wrapper'>
 						<input
@@ -116,10 +116,7 @@ const FindaPersonHero = () => {
 								className='fas fa-info-circle'
 								onClick={() => giveRandomExample(1)}
 							/>
-							<i
-								className='fa fa-times'
-								onClick={() => setLastName('')}
-							/>
+							<i className='fa fa-times' onClick={() => setLastName('')} />
 						</div>
 					</div>
 					<br />
@@ -136,17 +133,11 @@ const FindaPersonHero = () => {
 								className='fas fa-info-circle'
 								onClick={() => giveRandomExample(2)}
 							/>
-							<i
-								className='fa fa-times'
-								onClick={() => setFirstName('')}
-							/>
+							<i className='fa fa-times' onClick={() => setFirstName('')} />
 						</div>
 					</div>
 					<div className='find-hero-submit'>
-						<button
-							className='find-hero-submit-btn'
-							onClick={handleSubmit}
-						>
+						<button className='find-hero-submit-btn' onClick={handleSubmit}>
 							Search
 						</button>
 					</div>
