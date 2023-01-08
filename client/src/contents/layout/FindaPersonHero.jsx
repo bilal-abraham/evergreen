@@ -91,8 +91,8 @@ const FindaPersonHero = () => {
 					<i className='fa fa-search' />
 					&nbsp;Find A Person:
 				</header>
-				{/* <label className='find-hero-individual-wrapper'>
-					Individual Search?&nbsp;&nbsp;
+				<label className='find-hero-individual-wrapper'>
+					Individual Search? (Requires First & Last Name)&nbsp;&nbsp;
 					<select
 						className='find-hero-selector'
 						value={individualSearch}
@@ -101,7 +101,7 @@ const FindaPersonHero = () => {
 						<option value={false}>No</option>
 						<option value={true}>Yes</option>
 					</select>
-				</label> */}
+				</label>
 				<div className='search'>
 					<div className='search-input-wrapper'>
 						<input
