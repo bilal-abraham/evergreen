@@ -52,7 +52,7 @@ const AboutHero = () => {
 							<div className='about-card-wrapper'>
 								<AboutCard
 									name='Bilal Abraham'
-									role='Web-Developer'
+									role='Web Developer & Data Analyst'
 									hasGitHub={true}
 									github='https://github.com/bilal-abraham'
 									hasGram={true}
@@ -67,13 +67,6 @@ const AboutHero = () => {
 									hasGitHub={true}
 									github='https://github.com/ldonzells'
 									linkedin='https://www.linkedin.com/in/lillie-samuels/'
-								/>
-							</div>
-							<div className='about-card-wrapper'>
-								<AboutCard
-									name='Amitra Mamdouhi'
-									role='Data Analyst'
-									linkedin='https://wwwlinkedin.com'
 								/>
 							</div>
 						</div>
