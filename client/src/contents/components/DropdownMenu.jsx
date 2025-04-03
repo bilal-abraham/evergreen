@@ -19,9 +19,9 @@ const DropdownMenu = () => {
 	return (
 		<Fragment>
 			<div className='dropdown'>
-				<DropdownItem leftIcon={<Chart />} route='/statistics'>
+{/* 				<DropdownItem leftIcon={<Chart />} route='/statistics'>
 					Statistics Breakdown
-				</DropdownItem>
+				</DropdownItem> */}
 				<DropdownItem leftIcon={<Eye />} route='/findaperson'>
 					Find a Person
 				</DropdownItem>
